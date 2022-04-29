@@ -1,0 +1,117 @@
+@media (max-width: 991px) {
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        position:absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background-color: #fff;
+        top: 70px;
+        left: -100%; 
+        transition: 0.5s;
+    }
+    header nav.active{
+        left: 0; 
+        z-index: 99999999999999999;
+    }
+    header nav ul li a{
+        color: #333;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li {
+        border-bottom: 2px solid rgba(0,0,0,0.2);
+    }
+    header nav ul li.active ul{
+        position: relative;
+        background: #fff;
+    }
+    .sub-sub{
+        color: #333;
+    }
+    header nav ul li ul{
+        box-shadow: none;
+        z-index: 9999999999999999999;
+    }
+    header nav ul li ul li {
+        width: 100%;
+    }
+    .search{
+        justify-content: center;
+    }
+}
+
+
+/* Mobile & tablet */
+
+@media (max-width: 1023px) {
+   
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+   
+}
+
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+    header nav{
+        top: 60px;
+    }
+}
+
+/* mobile */
+@media(max-width: 739px) {
+    .hide-on-mobile{
+        display: none;
+    }
+    header.sticky{
+        position: unset;
+        /* padding: 5px; */
+    }
+    .box{
+        width: 200px;
+    }
+    .slide-img{
+        height: 250px;
+    }
+    .sliderr, .sliderr > div{
+        height: 200px;
+    }
+    .body__heading{
+        font-size: 12px;
+    }
+    .highlight h2::after{
+        left: 30%;
+    }
+    .new h2::after {
+        left: 30%;
+    }
+    .slider__product h2{
+        font-size: 25px;
+    }
+    .slider__product h2::after{
+        left: 30%;
+    }
+    .content__highlight,
+    .content__new{
+        margin: 5px;
+    }
+    .new__feed , 
+    .highlight__product{
+        margin: 20px 0;
+    }
+    .footer__content{
+        margin: 0 20px;
+    }
+}
